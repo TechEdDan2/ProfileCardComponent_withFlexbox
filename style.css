@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------- */
+/*     CSS Variables      */
+/* ---------------------- */
+:root {
+    --P-Dark-cyan: hsl(185, 75%, 39%);
+    --P-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --P-Dark-grayish-blue: hsl(227, 10%, 46%);
+    --neutral-dark-gray: hsl(0, 0%, 59%);
+}
+
+/* Apply some general property values and center card */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--P-Dark-cyan);
+    background-image: url(images/bg-pattern-bottom.svg);
+    /* I need to play with the background */
+    background-position: right 35% bottom 45%;
+}
+
+.wrapper {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25rem;
+    width: 295px
+}
+
+.wrapper img {
+    border: 5px solid white;
+    border-radius: 5rem;
+    transform: translateY(-25%);
+}
+
+.topSection {
+    min-height: 8.5rem;
+    background-image: url(images/bg-pattern-card.svg);
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.middleSection {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: -2rem;
+    padding-bottom: 1rem;
+}
+
+.userName {
+    font-size: 1.125Rem;
+    font-weight: 700;
+    color: var(--P-very-dark-desaturated-blue);
+}
+
+span {
+    font-weight: 400;
+    color: var(--neutral-dark-gray);
+    margin-left: 0.25rem;
+}
+
+.userLocation {
+    color: var(--neutral-dark-gray);
+    line-height: 2.5;
+}
+
+.info {
+    font-size: 0.25rem;
+    color: var(--neutral-dark-gray);
+    /* letter-spacing: 0.2rem; */
+}
+
+
+
+.statsSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.125rem 2rem;
+    text-align: center;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.467);
+    border-radius: 0 0 1.25rem 1.25rem;
+}
+
+.num {
+    font-weight: 700;
+    color: var(--P-very-dark-desaturated-blue);
+}
+
+.info {
+    font-weight: 400;
+    font-size: 0.65rem;
+    line-height: 2.5;
+    letter-spacing: .1rem;
+}
+
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
